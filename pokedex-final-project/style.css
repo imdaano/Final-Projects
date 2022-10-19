@@ -1,0 +1,140 @@
+body {
+    background: linear-gradient(
+      90deg,
+      rgba(131, 0, 0, 0.781) 0%,
+      rgba(88, 0, 55, 0.473) 54%,
+      rgb(20, 0, 53) 82%
+    );
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Oswald", sans-serif;
+  }
+  
+  /* h1 {
+    color: rgb(255, 255, 255);
+  } */
+  
+  .pokemon-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+
+ 
+  .pokemon-block,
+  .pokemon-block-back {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 3px 15px rgba(161, 161, 161, 0.678);
+  }
+  
+  .img-container {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #search {
+    width: 30%; /* Full-width */
+    font-size: 14px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    border-radius: 40px;
+  }
+  div.search-wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  button.to-do-list{
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .pokemon-block p {
+    margin: 5px;
+  }
+  
+  .name {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  #spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .type {
+    padding: 4px 8px;
+    border-radius: 8px;
+    display: inline-block;
+    color: black;
+  }
+  .type[typePokemons = "grass"] {
+    background-color: lightgreen;
+    border-radius: 50%;
+    border: 1px solid rgb(8, 8, 8);
+  }
+
+  .typePokemons {
+/*     background-color: rgb(48, 94, 48);*/    
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+  }
+
+  .pagination {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  
+  .card-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .card-container {
+    transform: rotateY(180deg);
+  }
+
+  .type {
+    padding: 4px 8px;
+  }
+  
+  .pokemon-block,
+  .pokemon-block-back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .pokemon-block-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0%;
+  }
+  
+  .stat-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: left;
+  }
